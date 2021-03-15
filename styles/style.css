@@ -1,0 +1,360 @@
+@font-face {
+	font-family: 'OpenSans';
+	src:url(../fonts/OpenSansCondensed-Light.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src:url(../fonts/Roboto-Regular.ttf);
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+body {
+    background: linear-gradient(180deg, #83a9ff, #011641);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 60s ease infinite;
+    -moz-animation: AnimationName 60s ease infinite;
+    animation: AnimationName 60s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
+#moon {
+	position: absolute;
+	right: 150px;
+	width: 150px;
+	animation: moon 30s infinite;
+	animation-directon: linear;
+}
+
+@keyframes moon{
+ 0% {
+ 	left: -130px;
+ 	top: 250px;
+        -webkit-animation-timing-function: ease-in;
+
+   }
+
+
+ 100% {
+ 	left: 375px;
+      top: 50px;
+      animation-timing-function: ease-out;
+   }
+}
+
+
+#sun {
+	position: absolute;
+	right: 150px;
+	width: 150px;
+	animation: sun 30s infinite;
+	animation-directon: linear;
+}
+
+@keyframes sun{
+ 0% {
+ 	left: -130px;
+ 	top: 250px;
+        -webkit-animation-timing-function: ease-in;
+
+   }
+
+
+ 100% {
+ 	left: 375px;
+      top: 50px;
+      animation-timing-function: ease-out;
+   }
+}
+
+#clock{
+	color: white;
+	font-size: 60px;
+	font-family: 'Roboto';
+	font-weight: normal;
+}
+
+#dag{
+	color: white;
+	font-family: 'OpenSans';
+	font-size: 23px;
+	text-align: left;
+	margin-top: 8em;
+	font-weight: lighter;
+}
+
+#datum{
+	color: white;
+	font-family: 'Roboto';
+	font-size: 30px;
+	text-align: left;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+#fases{
+	color: white;
+	font-family: 'Roboto';
+	font-weight: normal;
+	text-align: center;
+	margin-top: 1.3em;
+	font-size: 40px;
+	font-weight: bold;
+	text-shadow: 2px 4px 5px #000
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+	#clock{
+		font-size: 80px;
+	}
+
+	#dag{
+		font-size: 33px;
+		margin-top: 6em;
+	}
+
+	#datum{
+		font-size: 40px;
+	}
+
+	#fases{
+		font-size: 60px;
+	}
+
+#moon {
+	position: absolute;
+	right: 200px;
+	width: 200px;
+	animation: moon 30s infinite;
+	animation-directon: linear;
+}
+
+@keyframes moon{
+ 0% {
+ 	left: -160px;
+ 	top: 250px;
+        -webkit-animation-timing-function: ease-in;
+
+   }
+
+
+ 100% {
+ 	left: 775px;
+      top: 50px;
+      animation-timing-function: ease-out;
+   }
+}
+
+
+#sun {
+	position: absolute;
+	right: 230px;
+	width: 230px;
+	animation: sun 30s infinite;
+	animation-directon: linear;
+}
+
+@keyframes sun{
+ 0% {
+ 	left: -160px;
+ 	top: 250px;
+        -webkit-animation-timing-function: ease-in;
+
+   }
+
+
+ 100% {
+ 	left: 775px;
+      top: 50px;
+      animation-timing-function: ease-out;
+   }
+}
+
+}
+
+
+
+@media only screen and (min-width: 1024px){
+
+	.container{
+		display: flex;
+		flex-flow: wrap;
+	}
+
+	#clock{
+		font-size: 90px;
+	}
+
+	#dag{
+		font-size: 33px;
+		margin-top: 0;
+	}
+
+	#datum{
+		font-size: 40px;
+	}
+
+	.item1{
+		padding-top: 5px;
+		flex-flow: wrap;
+		width: 40%;
+		padding-left: 15em;
+	}
+
+	.item2{
+		flex-flow: wrap;
+		width: 50%;
+		padding-left: 90px;
+	}
+
+	.item1, .item2{
+		margin-top: 15em;
+	}
+
+	.item3{
+		width: 100%;
+	}
+
+	#fases{
+		text-align: center;
+		margin-top: 3em;
+	}
+
+	#moon {
+		position: absolute;
+		right: 220px;
+		width: 220px;
+		animation: moon 30s infinite;
+		animation-directon: linear;
+	}
+
+	@keyframes moon{
+	 0% {
+	 	left: -160px;
+	 	top: 250px;
+	        -webkit-animation-timing-function: ease-in;
+
+	   }
+
+
+	 100% {
+	 	left: 1100px;
+	      top: 50px;
+	      animation-timing-function: ease-out;
+	   }
+	}
+
+	#sun {
+		position: absolute;
+		right: 270px;
+		width: 270px;
+		animation: sun 30s infinite;
+		animation-directon: linear;
+	}
+
+	@keyframes sun{
+	 0% {
+	 	left: -160px;
+	 	top: 250px;
+	        -webkit-animation-timing-function: ease-in;
+	}
+
+
+	 100% {
+	 	left: 1100px;
+	      top: 50px;
+	      animation-timing-function: ease-out;
+	   }
+	}
+
+}
+
+@media only screen and (min-width: 1280px){
+
+	#moon {
+		position: absolute;
+		right: 180px;
+		width: 180px;
+		animation: moon 30s infinite;
+		animation-directon: linear;
+	}
+
+	@keyframes moon{
+	 0% {
+	 	left: -160px;
+	 	top: 100px;
+	        -webkit-animation-timing-function: ease-in;
+
+	   }
+
+
+	 100% {
+	 	left: 1200px;
+	      top: 0px;
+	      animation-timing-function: ease-out;
+	   }
+	}
+
+	#sun {
+		position: absolute;
+		right: 210px;
+		width: 210px;
+		animation: sun 30s infinite;
+		animation-directon: linear;
+	}
+
+	@keyframes sun{
+	 0% {
+	 	left: -160px;
+	 	top: 100px;
+	        -webkit-animation-timing-function: ease-in;
+	}
+
+
+	 100% {
+	 	left: 1200px;
+	      top: 0px;
+	      animation-timing-function: ease-out;
+	   }
+	}
+
+	#fases{
+		margin-top: 1em;
+	}
+
+}
+
+
+
